@@ -5,7 +5,7 @@ import { useGLTF, useTexture, Environment, Lightformer } from '@react-three/drei
 import { BallCollider, CuboidCollider, Physics, RigidBody, useRopeJoint, useSphericalJoint } from '@react-three/rapier'
 import { MeshLineGeometry, MeshLineMaterial } from 'meshline'
 import { useControls } from 'leva'
-import idc from "./images/id_ltc.svg"
+import idc from "./images/i_card.svg"
 import gfg from "./images/LTC5.svg"
 import { Text3D } from '@react-three/drei'
 
@@ -96,7 +96,9 @@ function Band({ maxSpeed = 50, minSpeed = 10 }) {
   texture.wrapS = texture.wrapT = THREE.RepeatWrapping
 
   // Define the username
-  const username = "KanaK B Pandey"; // Replace this with the actual username you want to display
+  const username = "Kanak";
+  const lastname = "Pandey";
+   // Replace this with the actual username you want to display
 
   return (
     <>
@@ -133,12 +135,12 @@ function Band({ maxSpeed = 50, minSpeed = 10 }) {
             <mesh geometry={nodes.clamp.geometry} material={materials.metal} />
 
             {/* Adding the username here */}
-            <group position={[-0.3, 0.75, 0.01]}>
+            <group position={[-0.29, 0.35, 0.01]}>
               <Text3D
                 bevelEnabled={false}
                 bevelSize={0}
                 size={0.06}
-                font="https://threejs.org/examples/fonts/helvetiker_regular.typeface.json"
+                font="https://threejs.org/examples/fonts/optimer_bold.typeface.json"
                 height={0}
                 position={[-0, 0, 0]}
                 rotation={[0, 0, 0]}
@@ -147,6 +149,22 @@ function Band({ maxSpeed = 50, minSpeed = 10 }) {
                 scale={[1, 1, 1]}
               >
                 {username}
+              </Text3D>
+            </group>
+            <group position={[-0.29, 0.25, 0.01]}>
+              <Text3D
+                bevelEnabled={false}
+                bevelSize={0}
+                size={0.06}
+                font="https://threejs.org/examples/fonts/optimer_bold.typeface.json"
+                height={0}
+                position={[-0, 0, 0]}
+                rotation={[0, 0, 0]}
+                anchorX="center"
+                anchorY="middle"
+                scale={[1, 1, 1]}
+              >
+                {lastname}
               </Text3D>
             </group>
           </group>
