@@ -117,3 +117,6 @@ div {
   display: block;
   unicode-bidi: isolate;
 }
+::-webkit-scrollbar{
+  display: none;
+}
