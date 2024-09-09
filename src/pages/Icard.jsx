@@ -141,7 +141,7 @@ function Band({ maxSpeed = 50, minSpeed = 10 }) {
     // Fetch the user's details by their ID
     const fetchUser = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/getUser/${userId}`);
+        const response = await axios.get(`https://serverforltc.onrender.com/api/getUser/${userId}`);
         setUsername(response.data.username);
       } catch (error) {
         console.error('Error fetching user data:', error);

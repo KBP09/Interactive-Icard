@@ -15,7 +15,7 @@ function App() {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:5000/api/addUser', { username });
+      const response = await axios.post('https://serverforltc.onrender.com/api/addUser', { username });
       navigate(`/icard/${response.data.userId}`);
     } catch (error) {
       console.error('There was an error!', error);
