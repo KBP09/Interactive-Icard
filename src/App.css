@@ -16,7 +16,60 @@ body,
 body {
   background-color: #111;
 }
-
+.forms{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.forms h1{
+  font-size: 50px;
+}
+.forms form input{
+  color: black;
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+}
+.forms form{
+  display: flex;
+}
+.forms form button{
+  color: black;
+  width: 100px;
+  height: 50px;
+}
 ::-webkit-scrollbar {
   display: none;
+}
+.Auth{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  background-color: black;
+}
+.Auth h1{
+  font-size: 50px;
+}
+
+.Auth form input{
+  color: black;
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+}
+.Auth form button{
+  color: black;
+  width: 100px;
+  height: 50px;
+}
+.Auth form{
+  display: flex;
 }

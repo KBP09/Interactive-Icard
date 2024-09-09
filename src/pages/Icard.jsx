@@ -168,7 +168,7 @@ function Band({ maxSpeed = 50, minSpeed = 10 }) {
         <RigidBody position={[2, 0, 0]} ref={card} {...segmentProps} type={dragged ? 'kinematicPosition' : 'dynamic'}>
           <CuboidCollider args={[0.8, 1.125, 0.01]} />
           <group
-            scale={2.30}
+            scale={2.20}
             position={[0, -1.2, -0.05]}
             onPointerOver={() => hover(true)}
             onPointerOut={() => hover(false)}
@@ -187,7 +187,7 @@ function Band({ maxSpeed = 50, minSpeed = 10 }) {
             <mesh geometry={nodes.clamp.geometry} material={materials.metal} />
 
             {/* Adding the username here */}
-            <group position={[-0.25, 0.37, 0.01]}>
+            <group position={[-0.20, 0.37, 0.01]}>
               <Text3D
                 bevelEnabled={false}
                 bevelSize={0}
@@ -201,7 +201,7 @@ function Band({ maxSpeed = 50, minSpeed = 10 }) {
                 anchorY="middle"
                 scale={[1, 1, 1]}
               >
-                {wrapText(username, 0.8, 0.05)} {/* maxWidth = 0.5, size = 0.06 */}
+                {wrapText(username, 0.7, 0.05)} {/* maxWidth = 0.5, size = 0.06 */}
               </Text3D>
             </group>
 
