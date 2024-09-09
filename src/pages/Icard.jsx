@@ -187,7 +187,7 @@ function Band({ maxSpeed = 50, minSpeed = 10 }) {
             <mesh geometry={nodes.clamp.geometry} material={materials.metal} />
 
             {/* Adding the username here */}
-            <group position={[-0.20, 0.37, 0.01]}>
+            <group position={[-0.25, 0.37, 0.01]}>
               <Text3D
                 bevelEnabled={false}
                 bevelSize={0}
