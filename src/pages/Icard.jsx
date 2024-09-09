@@ -201,7 +201,7 @@ function Band({ maxSpeed = 50, minSpeed = 10 }) {
                 anchorY="middle"
                 scale={[1, 1, 1]}
               >
-                {wrapText(username, 0.7, 0.05)} {/* maxWidth = 0.5, size = 0.06 */}
+                {wrapText(username, 0.8, 0.05)} {/* maxWidth = 0.5, size = 0.06 */}
               </Text3D>
             </group>
 
